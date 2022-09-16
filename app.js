@@ -40,13 +40,13 @@ const artworkArray = [
     {
         title: "The Planet",
         description:"A planet from a fantastic world made with the blender software for a project named : 'Defend Earth'",
-        picUrl:"picsrc/3D/Planet.png"
+        picUrl:"images/3D/Planet.png"
     },
 
     {
         title: "The 3D House",
         description:"A small self-project, made with the blender software ! Actually, it's just the modelisation, the next step on it will be the texturing and the materials !",
-        picUrl:"picsrc/3D/house2.png"
+        picUrl:"images/3D/house2.png"
     },    
 ]
 change3dArtwork()
@@ -67,49 +67,49 @@ const webArtwork =[
     {
         title: "",
         description:"QRCodeDesign_Html_Css",
-        picUrl : "picsrc/Prog/QRCodeDesign_Html_Css.PNG",
+        picUrl : "images/Prog/QRCodeDesign_Html_Css.PNG",
         liveUrl : "",
     },
 
     {
         title: "",
         description:"Product_preview_card_component",
-        picUrl : "picsrc/Prog/Product_preview_card_component.PNG",
+        picUrl : "images/Prog/Product_preview_card_component.PNG",
         liveUrl : "",
     },
 
     {
         title: "",
-        description:"picsrc/Prog/order_summary_component",
-        picUrl : "picsrc/Prog/order_summary_component.PNG",
+        description:"images/Prog/order_summary_component",
+        picUrl : "images/Prog/order_summary_component.PNG",
         liveUrl : "",
     },
 
     {
         title: "",
         description:"nft_preview_card_component",
-        picUrl : "picsrc/Prog/nft_preview_card_component.PNG",
+        picUrl : "images/Prog/nft_preview_card_component.PNG",
         liveUrl : "",
     },
 
     {
         title: "",
         description:"interactive_rating-component",
-        picUrl : "picsrc/Prog/interactive_rating-component.PNG",
+        picUrl : "images/Prog/interactive_rating-component.PNG",
         liveUrl : "",
     },
 
     {
         title: "",
         description:"huddle-landing-page-with-single-introductory-section",
-        picUrl : "picsrc/Prog/huddle-landing-page-with-single-introductory-section-master.PNG",
+        picUrl : "images/Prog/huddle-landing-page-with-single-introductory-section-master.PNG",
         liveUrl : "",
     },
 
     {
         title: "",
         description:"base-apparel-coming-soon-master",
-        picUrl : "picsrc/Prog/base-apparel-coming-soon-master.PNG",
+        picUrl : "images/Prog/base-apparel-coming-soon-master.PNG",
     }
 ]*/
 
