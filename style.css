@@ -212,7 +212,16 @@ main {
     font-size: 50px;
     text-shadow: #353f41 6px 10px 10px ;
     color: #224248;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    cursor: pointer;
+}
+.webartwork:hover {
+    color: #4d1330;
+    transition: all 3s;
+    text-shadow: #4d1330 8px 12px 10px ;
+    font-synthesis: weight;
+    font-weight: 900;
+
 }
 .web {
     display: flex;
