@@ -1,0 +1,11 @@
+{
+  "type" : "sfdc_cms__route",
+  "title" : "Actualités Detail",
+  "contentBody" : {
+    "activeViewId" : "managed_content_sfdc_cms_news",
+    "configurationTags" : [ ],
+    "pageAccess" : "UseParent",
+    "routeType" : "managed-content-sfdc_cms__news",
+    "urlPrefix" : "news"
+  }
+}

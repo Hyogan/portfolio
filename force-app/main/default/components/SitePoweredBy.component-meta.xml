@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ApexComponent xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>58.0</apiVersion>
+    <description>Site piloté par composant par défaut de plate-forme Lightning</description>
+    <label>SitePoweredBy</label>
+</ApexComponent>

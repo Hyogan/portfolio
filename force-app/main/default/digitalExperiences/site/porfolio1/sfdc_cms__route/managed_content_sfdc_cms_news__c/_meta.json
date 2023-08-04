@@ -1,0 +1,5 @@
+{
+  "apiName" : "managed_content_sfdc_cms_news__c",
+  "type" : "sfdc_cms__route",
+  "path" : "routes"
+}
