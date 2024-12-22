@@ -2,20 +2,54 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+
+
+
+.hamburger{
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  transition: all 0.25s;
+  position: relative;
+  border: none;
+  z-index: 999999999;
+  background: none;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.hamburger-top,
+.hamburger-middle,
+.hamburger-bottom{
+  position:absolute;
+  top : 0;
+  left: -5px;
+  width: 50px;
+  height: 4px;
+  background: #16e0bd;
+  transform: rotate(0);
+  transition: all 0.5s;
+  border-radius: 3px;
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+.hamburger-middle{
+transform: translateY(7px);
+}
+.hamburger-bottom{
+transform: translateY(14px);
+}
+
+.open{
+transform: rotate(90deg);
+transform: translateY(0px);
+}
+
+.open .hamburger-top{
+transform: rotate(45deg) translateY(6px) translate(7px);
+}
+
+.open .hamburger-bottom{
+transform: rotate(-45deg) translateY(6px) translate(-7px);
+}
+
+.open .hamburger-middle{
+display: none;
 }
