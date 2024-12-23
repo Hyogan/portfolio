@@ -9,9 +9,20 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: '#16e0bd',
-        secondary: '',
+        initial: '#16e0bd',
+        primary: '#292929',
+        darkPrim: '#232323',
+        secondary: '#4D4D4D',
+        terciary: '#898989',
         darkgray: '#303030',
+      },
+      fontFamily: {
+        roboto: ['var(--font-roboto)'],
+        karla: ['var(--font-karla)'],
+        prompt: ['var(--font-prompt)'],
+      },
+      letterSpacing: {
+        spaced_max: '.50em'
       },
     },
   },

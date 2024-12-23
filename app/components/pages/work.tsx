@@ -1,5 +1,5 @@
 import React from 'react';
-import { Project } from '../interfaces/project';
+import { Project } from '../../interfaces/project';
 import Image from 'next/image';
 
 const Work = () => {
@@ -30,7 +30,7 @@ const Work = () => {
     return (
         <section className="w-full flex flex-col items-center py-12 gap-8 bg-darkgray min-h-[60vh]">
             <h3 className="text-white text-5xl md:text-6xl font-bold text-center">My Work</h3>
-            <p className="text-primary text-lg md:text-xl font-semibold text-center">
+            <p className="text-initial text-lg md:text-xl font-semibold text-center">
                 A selected range of the projects I&apos;ve worked on!
             </p>
             <div className="flex flex-wrap justify-center gap-8 w-full max-w-screen-xl px-4">

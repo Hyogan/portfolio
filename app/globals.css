@@ -10,6 +10,7 @@
   width: 24px;
   height: 24px;
   transition: all 0.25s;
+  gap: 10px;
   position: relative;
   border: none;
   z-index: 999999999;
@@ -31,10 +32,11 @@
 }
 
 .hamburger-middle{
-transform: translateY(7px);
+transform: translateY(9px);
+width: 40px;
 }
 .hamburger-bottom{
-transform: translateY(14px);
+transform: translateY(18px);
 }
 
 .open{
@@ -52,4 +54,27 @@ transform: rotate(-45deg) translateY(6px) translate(-7px);
 
 .open .hamburger-middle{
 display: none;
+}
+
+
+/* Fade-in Animation */
+/* Center Circles */
+.background_circles.relative > div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: fadeIn 1.5s ease forwards;
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: scale(0.8) translate(-50%, -50%);
+  }
+  to {
+      opacity: 1;
+      transform: scale(1) translate(-50%, -50%);
+  }
 }
