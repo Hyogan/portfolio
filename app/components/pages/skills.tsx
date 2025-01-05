@@ -20,7 +20,7 @@ const Skills = () => {
         <p className=" tracking-widest font-bold mb-4 mt-32 text-center text-white text-xl">
           SKILLS
         </p>
-        <h1 className="text-5xl md:text-7xl uppercase text-white font-bold text-center relative z-10">
+        <h1 className="text-4xl sm:text-5xl md:text-7xl uppercase text-white font-bold text-center relative z-10">
             Expertise & Proficiency
             <span className="ml-1 border-l-4 border-primary animate-ping"></span>
         </h1>

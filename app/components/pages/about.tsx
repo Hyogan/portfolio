@@ -11,15 +11,15 @@ const About = () => {
          </div>
           <section className="w-full min-h-screen flex items-center justify-center  text-white  flex-col md:flex-row gap-8">
                 {/* Image Section */}
-                <div className="relative w-[430px] h-[500px] rounded-xl overflow-hidden shadow-lg">
-                <Image
-                    src="/images/screen_devio.png" // Replace with your image path
-                    alt="Profile Picture"
-                    fill
-                    className="object-cover"
-                />
+                <div className="relative w-[90vw] h-[280px] md:w-[430px] md:h-[500px] rounded-xl overflow-hidden shadow-lg">
+                    <Image
+                        src="/images/screen_devio.png" // Replace with your image path
+                        alt="Profile Picture"
+                        fill
+                        className="object-cover"
+                    />
                 </div>
-                <div className="flex flex-col max-w-[50%] items-start">
+                <div className="flex flex-col w-full md:max-w-[50%] px-8 items-center text-center md:items-start">
                     <h2 className="text-4xl font-bold mb-4">About</h2>
                     <p className="text-lg leading-relaxed">
                         I&apos;m Nelson Tiagho, a dedicated web and mobile developer passionate about crafting modern, user-friendly applications. 
