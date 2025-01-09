@@ -9,7 +9,7 @@ const Skills = () => {
   ];
 
   return (
-    <section className="relative w-full min-h-screen py-20  bg-gradient-to-b from-primary via-primary to-secondary">
+    <section className="relative w-full min-h-screen py-20 px-4 bg-gradient-to-b from-primary via-primary to-secondary">
       {/* Background */}
       <div className="absolute -top-20 left-0 w-full h-full">
         <AnimatedWave />
