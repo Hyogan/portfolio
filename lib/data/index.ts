@@ -1,0 +1,8 @@
+export { navigation } from './navigation'
+export { techGroups, languages } from './stack'
+export { projects } from './projects'
+export { experience } from './experience'
+export { education } from './education'
+export { clients } from './clients'
+export { testimonials } from './testimonials'
+export { faq } from './faq'
