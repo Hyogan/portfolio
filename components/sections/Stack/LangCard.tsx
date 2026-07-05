@@ -2,7 +2,7 @@ interface LangCardProps {
   flag: string
   name: string
   level: string
-  levelKey: string
+  levelKey?: string
 }
 
 export default function LangCard({ flag, name, level, levelKey }: LangCardProps) {
