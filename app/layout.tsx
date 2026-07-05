@@ -1,15 +1,16 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
+import { cookies } from 'next/headers'
+import { locales, defaultLocale } from '@/lib/i18n/dictionaries'
 import './globals.css'
 
 /*
-  WHY next/font/google instead of a CDN link?
-  ─────────────────────────────────────────────
-  next/font/google downloads Inter at BUILD TIME and self-hosts it.
-  At runtime, the browser loads the font from your own domain — no Google
-  request, no privacy/GDPR concern, no external failure point.
-  The `variable` option injects --font-inter as a CSS custom property on
-  <html>, which our @theme inline block picks up as --font-sans.
+  WHY read the locale from a cookie here instead of URL params?
+  ──────────────────────────────────────────────────────────────
+  Next.js requires the root layout (app/layout.tsx) to render <html> and <body>.
+  But root layouts have no access to dynamic segment params — those only exist in
+  nested layouts. The proxy.ts sets a NEXT_LOCALE cookie on every request,
+  which this root layout can read to get the correct lang attribute.
 */
 const inter = Inter({
   subsets: ['latin'],
@@ -17,27 +18,17 @@ const inter = Inter({
   display: 'swap',
 })
 
-/*
-  This is the ROOT layout — the outermost shell Next.js renders.
-  It must render <html> and <body>. Nothing else lives here yet;
-  the real per-locale layout (fonts, ThemeProvider, metadata, JSON-LD)
-  will be in app/[lang]/layout.tsx once i18n is wired up in commit 2.
-
-  lang="fr" is a placeholder — commit 2 makes this dynamic via locale detection.
-*/
 export const metadata: Metadata = {
-  title: 'Arsène Fogue — Fullstack & Product Manager',
-  description:
-    "Portfolio d'Arsène Nelson Fogue Tiagho, développeur fullstack et product manager basé à Douala, Cameroun.",
+  title: 'Arsène Fogue',
 }
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode
-}) {
+export default async function RootLayout({ children }: { children: React.ReactNode }) {
+  const cookieStore = await cookies()
+  const rawLang = cookieStore.get('NEXT_LOCALE')?.value ?? defaultLocale
+  const lang = (locales as readonly string[]).includes(rawLang) ? rawLang : defaultLocale
+
   return (
-    <html lang="fr" className={inter.variable}>
+    <html lang={lang} className={inter.variable}>
       <body className="min-h-screen flex flex-col antialiased bg-bg text-fg">
         {children}
       </body>

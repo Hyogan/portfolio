@@ -1,0 +1,147 @@
+{
+  "meta": {
+    "title": "Arsène Fogue — Fullstack & Product Manager",
+    "description": "Portfolio d'Arsène Nelson Fogue Tiagho, développeur fullstack et product manager basé à Douala, Cameroun. +3 ans d'expérience, +10 projets livrés."
+  },
+  "nav": {
+    "about": "À propos",
+    "stack": "Stack",
+    "projects": "Projets",
+    "experience": "Expérience",
+    "education": "Formation",
+    "clients": "Clients",
+    "faq": "FAQ",
+    "contact": "Contact"
+  },
+  "availability": {
+    "badge": "Disponible"
+  },
+  "hero": {
+    "heading1": "Fullstack",
+    "heading2": "& Product",
+    "subtitle": "Passionné par l'innovation, j'optimise mes workflows grâce à l'IA pour la conception d'architectures, le développement d'APIs et la création d'interfaces intuitives.",
+    "role": "Développeur Fullstack & Product Manager",
+    "bio": "Ingénieur logiciel et Product Manager, je conçois des solutions numériques robustes et centrées sur l'utilisateur.",
+    "stats": {
+      "years": "+3",
+      "yearsLabel": "Années\nd'expérience",
+      "projects": "+10",
+      "projectsLabel": "Projets\nlivrés",
+      "clients": "+6",
+      "clientsLabel": "Clients\naccompagnés",
+      "languages": "2",
+      "languagesLabel": "Langues\nde travail"
+    },
+    "ctaStack": "React Native, Spring Boot, Laravel",
+    "ctaProjects": "Angular, React, TailwindCSS, Next.js"
+  },
+  "marquee": {
+    "available": "Disponible — Télétravail ou présentiel",
+    "location": "Douala, Cameroun",
+    "role": "Fullstack & Product Manager",
+    "workLanguages": "Anglais · Français · Espagnol"
+  },
+  "about": {
+    "heading": "À",
+    "headingAccent": "propos",
+    "bio1": "Je suis <strong>Arsène Nelson Fogue Tiagho</strong>, développeur fullstack et Product Manager basé à Douala, Cameroun. Diplômé en Ingénierie Logicielle de l'Institut Africain d'Informatique (IAI), je construis des applications web et mobiles robustes, de la base de données jusqu'à l'interface utilisateur.",
+    "bio2": "Ce qui me distingue : je combine l'ingénierie avec la casquette produit — j'analyse les besoins métier, priorise les fonctionnalités et coordonne les équipes, pas seulement je code. Curieux et motivé par l'innovation, j'utilise l'IA comme levier pour concevoir des architectures solides et livrer plus vite sans sacrifier la qualité.",
+    "bio3": "En dehors du code : modélisation 3D, écriture, lecture et jeux vidéo.",
+    "locationLabel": "Localisation",
+    "location": "Douala, Cameroun",
+    "availabilityLabel": "Disponibilité",
+    "availability": "Télétravail / Présentiel",
+    "languagesLabel": "Langues",
+    "spokenLanguages": "Français · Anglais · Espagnol",
+    "licenseLabel": "Permis",
+    "license": "Permis B",
+    "softSkillsLabel": "Soft skills",
+    "softSkills": "Problem-solving · Gestion du temps · Communication · Organisation · Travail en équipe"
+  },
+  "stack": {
+    "heading": "Stack",
+    "headingAccent": "technique",
+    "categoryLanguages": "Langues",
+    "categoryFrontend": "Frontend",
+    "categoryMobile": "Mobile",
+    "categoryBackend": "Backend",
+    "categoryDatabase": "Base de données & Infra",
+    "categoryTools": "Outils & Méthodes"
+  },
+  "projects": {
+    "heading": "Projets",
+    "headingAccent": "récents"
+  },
+  "experience": {
+    "heading": "Expérience",
+    "headingAccent": "professionnelle",
+    "current": "Poste actuel"
+  },
+  "education": {
+    "heading": "Formation",
+    "headingAccent": "académique",
+    "obtained": "Diplôme obtenu"
+  },
+  "clients": {
+    "heading": "Ils m'ont",
+    "headingAccent": "fait confiance",
+    "subtitle": "Entreprises et organisations avec lesquelles j'ai collaboré.",
+    "cta": "Et vous, prochain\nsur la liste ?"
+  },
+  "testimonials": {
+    "heading": "Ce qu'ils",
+    "headingAccent": "en disent"
+  },
+  "faq": {
+    "heading": "Questions",
+    "headingAccent": "fréquentes"
+  },
+  "contact": {
+    "heading": "Travaillons",
+    "headingAccent": "ensemble",
+    "subtitle": "Disponible pour des missions freelance, du consulting produit et des postes.",
+    "namePlaceholder": "Nom",
+    "emailPlaceholder": "Email",
+    "subjectPlaceholder": "Sujet",
+    "budgetPlaceholder": "Budget estimé",
+    "budgets": [
+      "Moins de 500 000 FCFA",
+      "500 000 – 1 500 000 FCFA",
+      "1 500 000 – 3 000 000 FCFA",
+      "Plus de 3 000 000 FCFA",
+      "À discuter"
+    ],
+    "messagePlaceholder": "Votre message",
+    "submit": "Envoyer →",
+    "copyEmail": "tiaghojeux@gmail.com",
+    "copied": "Copié !",
+    "successMessage": "✓ Message reçu — Arsène vous répondra rapidement !",
+    "errorMessage": "Une erreur s'est produite. Réessayez."
+  },
+  "footer": {
+    "tagline": "Développeur Fullstack & Product Manager\nDouala, Cameroun · Disponible en remote",
+    "navLabel": "Navigation",
+    "contactLabel": "Contact",
+    "phone": "+237 6 51 85 88 90",
+    "copyright": "© 2026 Arsène Nelson Fogue Tiagho"
+  },
+  "project": {
+    "back": "← Retour aux projets",
+    "labelContext": "Contexte",
+    "labelSolution": "Solution",
+    "labelArchitecture": "Architecture",
+    "labelChallenges": "Défis",
+    "labelResults": "Résultats",
+    "whyChoices": "Pourquoi ces choix ?",
+    "nextProject": "Projet suivant",
+    "cta": "Discutons de votre projet",
+    "activeUsers": "Utilisateurs actifs",
+    "storeRating": "Note store",
+    "deliveryTime": "Délai de livraison"
+  },
+  "lang": {
+    "fr": "Français",
+    "en": "English",
+    "es": "Español"
+  }
+}
