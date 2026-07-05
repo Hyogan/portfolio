@@ -36,6 +36,10 @@
   /* Profile card — deliberately inverts between modes */
   --color-card: #ffffff;
   --color-card-fg: #0e0e0e;
+
+  /* Custom animation utilities */
+  --animate-marquee: marquee 28s linear infinite;
+  --animate-pulse-dot: pulse-dot 2.4s ease-in-out infinite;
 }
 
 /* ─── Light mode ──────────────────────────────────────────────────────────── */
