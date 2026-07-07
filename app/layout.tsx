@@ -1,7 +1,9 @@
-import type { Metadata } from 'next'
+import type { Metadata, Viewport } from 'next'
 import { Inter } from 'next/font/google'
 import { cookies } from 'next/headers'
 import { locales, defaultLocale } from '@/lib/i18n/dictionaries'
+import ThemeProvider from '@/components/providers/ThemeProvider'
+import SplashScreen from '@/components/ui/SplashScreen'
 import './globals.css'
 
 /*
@@ -18,6 +20,16 @@ const inter = Inter({
   display: 'swap',
 })
 
+
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  maximumScale: 1,
+  userScalable: false,
+  // Also supported but less commonly used
+  // interactiveWidget: 'resizes-visual',
+}
+
 export const metadata: Metadata = {
   title: 'Arsène Fogue',
 }
@@ -29,8 +41,12 @@ export default async function RootLayout({ children }: { children: React.ReactNo
 
   return (
     <html lang={lang} className={inter.variable}>
+      <head></head>
       <body className="min-h-screen flex flex-col antialiased bg-bg text-fg">
-        {children}
+        <ThemeProvider>
+          <SplashScreen />
+          {children}
+        </ThemeProvider>
       </body>
     </html>
   )

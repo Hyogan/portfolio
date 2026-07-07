@@ -39,7 +39,7 @@ export default function HeroSection({ dict }: HeroSectionProps) {
 
   return (
     <section id="home" className="pt-28 sm:pt-36 pb-16">
-      <div className="grid lg:grid-cols-[320px_1fr] gap-10 lg:gap-14">
+      <div className="grid items-center justify-center lg:grid-cols-[320px_1fr] gap-10 lg:gap-14">
 
         <RevealWrapper delay={0}>
           <ProfileCard role={hero.role} bio={hero.bio} />

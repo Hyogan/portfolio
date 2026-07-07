@@ -1,7 +1,6 @@
 import { notFound } from 'next/navigation'
 import type { Metadata } from 'next'
 import { getDictionary, hasLocale } from '@/lib/i18n/dictionaries'
-import ThemeProvider from '@/components/providers/ThemeProvider'
 
 /*
   This is the locale-aware nested layout — it wraps every page under /fr/, /en/, /es/.
@@ -69,5 +68,5 @@ export default async function LangLayout({
   // Guard: unknown locale → 404 instead of broken page
   if (!hasLocale(lang)) notFound()
 
-  return <ThemeProvider>{children}</ThemeProvider>
+  return <>{children}</>
 }

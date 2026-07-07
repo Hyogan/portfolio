@@ -22,7 +22,7 @@ export default function TestimonialsSection({ dict, testimonials, lang }: Testim
         <SectionHeading main={dict.testimonials.heading} accent={dict.testimonials.headingAccent} className="mb-12" />
       </RevealWrapper>
       <RevealWrapper delay={0.05}>
-        <div className="grid sm:grid-cols-3 gap-6">
+        <div className="flex flex-col gap-4">
           {testimonials.map((t) => (
             <TestimonialCard key={t.initials} testimonial={t} lang={lang} />
           ))}

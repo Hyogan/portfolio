@@ -1,5 +1,5 @@
-import Image from 'next/image'
 import FooterCopyright from './FooterCopyright'
+import Logo from '@/components/ui/Logo'
 
 interface FooterProps {
   dict: {
@@ -38,7 +38,7 @@ export default function Footer({ dict, lang }: FooterProps) {
         {/* Brand */}
         <div>
           <div className="flex items-center gap-2 mb-2">
-            <Image src="/assets/logo.png" alt="AT" width={28} height={28} className="object-contain" />
+            <Logo size={28} className="object-contain" />
             <p className="font-extrabold text-base">
               Arsène<span className="text-orange">.</span>dev
             </p>

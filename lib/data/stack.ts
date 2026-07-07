@@ -2,7 +2,7 @@ import type { TechGroup, LangItem } from '@/lib/types/content'
 
 export const languages: LangItem[] = [
   { name: 'Français',  flag: '🇫🇷', level: 'C2', levelKey: 'Langue maternelle' },
-  { name: 'Anglais',   flag: '🇬🇧', level: 'B2', levelKey: 'Professionnel' },
+  { name: 'Anglais',   flag: '🇬🇧', level: 'C1', levelKey: 'Professionnel' },
   { name: 'Espagnol',  flag: '🇪🇸', level: 'A2', levelKey: 'Notions' },
 ]
 
@@ -19,7 +19,7 @@ export const techGroups: TechGroup[] = [
       { name: 'Next.js',      icon: 'simple-icons:nextdotjs',   color: '#FFFFFF' },
       { name: 'Angular',      icon: 'simple-icons:angular',     color: '#DD0031' },
       { name: 'Tailwind CSS', icon: 'simple-icons:tailwindcss', color: '#06B6D4' },
-      { name: 'SASS',         icon: 'simple-icons:sass',        color: '#CC6699' },
+      // { name: 'SASS',         icon: 'simple-icons:sass',        color: '#CC6699' },
     ],
   },
   {
@@ -39,7 +39,7 @@ export const techGroups: TechGroup[] = [
       { name: 'Spring Boot', icon: 'simple-icons:springboot', color: '#6DB33F' },
       { name: 'Java',        icon: 'simple-icons:java',       color: '#007396' },
       { name: 'Python',      icon: 'simple-icons:python',     color: '#3776AB' },
-      { name: 'Salesforce',  icon: 'simple-icons:salesforce', color: '#00A1E0' },
+      // { name: 'Salesforce',  icon: 'simple-icons:salesforce', color: '#00A1E0' },
     ],
   },
   {

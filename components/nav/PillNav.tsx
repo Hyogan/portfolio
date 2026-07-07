@@ -1,10 +1,12 @@
-import Image from 'next/image'
 import {
   User, Layers, Folder, Briefcase, GraduationCap,
   Building2, HelpCircle, PenLine,
 } from 'lucide-react'
 import NavLink from './NavLink'
 import ThemeToggle from '@/components/ui/ThemeToggle'
+import LanguageSwitcher from './LanguageSwitcher'
+import MobileMenu from './MobileMenu'
+import Logo from '@/components/ui/Logo'
 
 const iconMap: Record<string, React.ReactNode> = {
   User:          <User size={18} />,
@@ -25,20 +27,24 @@ interface NavItem {
 
 interface PillNavProps {
   items: NavItem[]
+  lang: string
+  langLabels: { fr: string; en: string; es: string }
 }
 
-export default function PillNav({ items }: PillNavProps) {
+export default function PillNav({ items, lang, langLabels }: PillNavProps) {
   return (
+    <>
+      <MobileMenu items={items} lang={lang} langLabels={langLabels} />
     <nav
       aria-label="Navigation principale"
-      className="fixed top-5 left-1/2 z-50 -translate-x-1/2 flex items-center gap-1 rounded-full border border-fg/10 bg-surface/90 px-2 py-2 backdrop-blur"
+      className="hidden md:flex fixed top-5 left-1/2 z-50 -translate-x-1/2 items-center gap-1 rounded-full border border-fg/10 bg-surface/90 px-2 py-2 backdrop-blur"
     >
       <a
         href="#home"
         title="Accueil"
         className="flex items-center px-1.5 transition-opacity hover:opacity-70"
       >
-        <Image src="/assets/logo.png" alt="AT Logo" width={26} height={26} priority />
+        <Logo size={26} priority />
       </a>
 
       {items.map((item) => (
@@ -47,7 +53,9 @@ export default function PillNav({ items }: PillNavProps) {
         </NavLink>
       ))}
 
+      <LanguageSwitcher lang={lang} labels={langLabels} />
       <ThemeToggle />
     </nav>
+    </>
   )
 }

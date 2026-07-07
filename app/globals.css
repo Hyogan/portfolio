@@ -1,17 +1,20 @@
 @import "tailwindcss";
 
 /*
-  @theme inline tells Tailwind v4 to:
-  1. Generate utility classes from these CSS custom properties
-     (e.g. --color-orange → bg-orange, text-orange, border-orange)
-  2. Keep them as actual CSS vars (so .light can override them at runtime)
+  WHY @theme (not @theme inline)?
+  ─────────────────────────────────
+  @theme inline compiles CSS var values to literals at build time:
+    .bg-surface { background-color: #1a1a1a }  ← hardcoded, .light can't override it
 
-  Dark mode IS the default — no class needed on <html>.
-  ThemeProvider adds class="light" on <html> to switch to light mode,
-  which triggers the .light block below to override every token.
+  @theme (no inline) emits real CSS custom properties at :root AND generates
+  utilities that reference them via var():
+    :root { --color-surface: #1a1a1a }
+    .bg-surface { background-color: var(--color-surface) }
+
+  Now .light { --color-surface: #ede7df } actually works at runtime.
 */
 
-@theme inline {
+@theme {
   /* Font */
   --font-sans: var(--font-inter);
 
@@ -36,23 +39,19 @@
   /* Profile card — deliberately inverts between modes */
   --color-card: #ffffff;
   --color-card-fg: #0e0e0e;
-
-  /* Custom animation utilities */
-  --animate-marquee: marquee 28s linear infinite;
-  --animate-pulse-dot: pulse-dot 2.4s ease-in-out infinite;
 }
 
 /* ─── Light mode ──────────────────────────────────────────────────────────── */
-/* Applied when ThemeProvider sets class="light" on <html>                    */
+/* Applied when ThemeProvider adds class="light" to <html>                    */
 
 .light {
-  --color-bg: #f5f0eb;       /* warm off-white — not pure white, avoids harshness */
-  --color-surface: #ede7df;
-  --color-ghost: #d8d0c8;
+  --color-bg: #f5f0eb;
+  --color-surface: #e8e1d9;
+  --color-ghost: #b0a89e;     /* darker than bg so heading accents remain readable */
   --color-fg: #111111;
-  --color-orange: #c9920a;   /* darkened for WCAG AA contrast on warm bg */
-  --color-lime: #88a800;     /* darkened significantly for legibility */
-  --color-card: #1a1a1a;     /* profile card inverts to dark */
+  --color-orange: #c9920a;    /* darkened for WCAG AA contrast on warm bg */
+  --color-lime: #88a800;
+  --color-card: #1a1a1a;      /* profile card inverts to dark */
   --color-card-fg: #f5f0eb;
 }
 
@@ -66,29 +65,32 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* ─── CSS-only animations (no JS needed) ─────────────────────────────────── */
-
+/* ─── Animation utilities ─────────────────────────────────────────────────── */
 /*
-  Marquee: duplicates the track content so the loop is seamless.
-  The trick: translateX(-50%) on a 200%-wide element = exactly one copy's width.
+  Defined explicitly here (not via @theme) to guarantee browser compatibility.
+  CSS custom properties inside animation shorthand can be unreliable.
 */
+
 @keyframes marquee {
   from { transform: translateX(0); }
   to   { transform: translateX(-50%); }
 }
 
-/* Status dot: pulsing opacity to signal availability */
 @keyframes pulse-dot {
   0%, 100% { opacity: 1; }
   50%       { opacity: 0.35; }
 }
 
+.animate-marquee {
+  animation: marquee 28s linear infinite;
+}
+
+.animate-pulse-dot {
+  animation: pulse-dot 2.4s ease-in-out infinite;
+}
+
 /* ─── Accessibility ───────────────────────────────────────────────────────── */
 
-/*
-  Respects the user's OS-level "Reduce Motion" preference.
-  Framer Motion also reads useReducedMotion() for JS animations.
-*/
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after {
     animation-duration: 0.01ms !important;
@@ -96,7 +98,6 @@ body {
   }
 }
 
-/* Orange focus ring matches the brand — visible only on keyboard navigation */
 :focus-visible {
   outline: 2px solid var(--color-orange);
   outline-offset: 3px;

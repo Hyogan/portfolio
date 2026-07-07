@@ -51,25 +51,31 @@ export default async function HomePage({
     dict.marquee.role,
     dict.marquee.workLanguages,
   ]
-
+  const constrained = 'max-w-6xl mx-auto px-6 lg:px-10'
   return (
     <>
-      <PillNav items={navItems} />
+      <PillNav items={navItems} lang={lang} langLabels={dict.lang} />
       <FloatingCTA label={dict.availability.badge} />
 
-      <main className="max-w-6xl mx-auto px-6 lg:px-10">
-        <HeroSection dict={dict} />
+     <main>
+        <div className={constrained}>
+          <HeroSection dict={dict} />
+        </div>
+
         <MarqueeBar items={marqueeItems} />
-        <AboutSection dict={dict} />
-        <StackSection dict={dict} techGroups={techGroups} languages={languages} />
-        <ProjectsSection dict={dict} projects={projects} lang={lang} />
-        <ExperienceSection dict={dict} experience={experience} lang={locale} />
-        <EducationSection dict={dict} education={education} lang={locale} />
-        <ClientsSection dict={dict} clients={clients} />
-        <TestimonialsSection dict={dict} testimonials={testimonials} lang={locale} />
-        <FAQSection dict={dict} faq={faq} lang={locale} />
-        <ContactSection dict={dict} />
-        <Footer dict={dict} lang={lang} />
+
+        <div className={constrained}>
+          <AboutSection dict={dict} />
+          <StackSection dict={dict} techGroups={techGroups} languages={languages} />
+          <ProjectsSection dict={dict} projects={projects} lang={lang} />
+          <ExperienceSection dict={dict} experience={experience} lang={locale} />
+          <EducationSection dict={dict} education={education} lang={locale} />
+          <ClientsSection dict={dict} clients={clients} />
+          <TestimonialsSection dict={dict} testimonials={testimonials} lang={locale} />
+          <FAQSection dict={dict} faq={faq} lang={locale} />
+          <ContactSection dict={dict} />
+          <Footer dict={dict} lang={lang} />
+        </div>
       </main>
     </>
   )

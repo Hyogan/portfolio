@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import SocialLinks from './SocialLinks'
+import Logo from '@/components/ui/Logo'
 
 interface ProfileCardProps {
   role: string
@@ -8,7 +9,7 @@ interface ProfileCardProps {
 
 export default function ProfileCard({ role, bio }: ProfileCardProps) {
   return (
-    <div className="bg-card text-card-fg rounded-[1.75rem] p-6 max-w-[340px] mx-auto lg:mx-0 shadow-[0_24px_50px_-20px_rgba(239,182,63,0.2)]">
+    <div className="bg-card text-card-fg rounded-[1.75rem] p-6 sm:max-w-[200px]  md:max-w-[340px] mx-auto lg:mx-0 shadow-[0_24px_50px_-20px_rgba(239,182,63,0.2)]">
       {/* Photo on orange background */}
       <div className="relative rounded-2xl overflow-hidden mb-5 bg-orange" style={{ aspectRatio: '3 / 3.2' }}>
         <Image
@@ -26,7 +27,7 @@ export default function ProfileCard({ role, bio }: ProfileCardProps) {
 
       <div className="flex justify-center mb-4">
         <span className="h-10 w-10 rounded-full bg-bg flex items-center justify-center">
-          <Image src="/assets/logo.png" alt="AT" width={28} height={28} className="object-contain" />
+          <Logo size={28} noBg className="object-contain" />
         </span>
       </div>
 

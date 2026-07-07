@@ -1,25 +1,10 @@
 'use client'
 
 import { Sun, Moon } from 'lucide-react'
-import { useState } from 'react'
+import { useTheme } from '@/components/providers/ThemeProvider'
 
 export default function ThemeToggle() {
-  const [isLight, setIsLight] = useState(
-    () => typeof window !== 'undefined' && document.documentElement.classList.contains('light')
-  )
-
-  function toggle() {
-    const html = document.documentElement
-    if (html.classList.contains('light')) {
-      html.classList.remove('light')
-      localStorage.setItem('theme', 'dark')
-      setIsLight(false)
-    } else {
-      html.classList.add('light')
-      localStorage.setItem('theme', 'light')
-      setIsLight(true)
-    }
-  }
+  const { isLight, toggle } = useTheme()
 
   return (
     <button
