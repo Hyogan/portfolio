@@ -42,7 +42,7 @@ export default async function ProjectPage({
 
         <ProjectHero project={project} subtitle={project.subtitle} dict={dict} />
 
-        {/* Mockups — Finovo only */}
+        {/* Mockups - Finovo only */}
         {project.slug === 'finovo' && (
           <div className="flex flex-col sm:flex-row gap-6 items-start mb-16">
             <BrowserMockup url="finovo.app/dashboard">

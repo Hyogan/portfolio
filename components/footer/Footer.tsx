@@ -64,8 +64,8 @@ export default function Footer({ dict, lang }: FooterProps) {
           <div className="flex flex-col gap-2 text-fg/55">
             <a href="mailto:tiaghojeux@gmail.com" className="hover:text-fg transition-colors text-xs">tiaghojeux@gmail.com</a>
             <a href="tel:+237651858890" className="hover:text-fg transition-colors text-xs">{dict.footer.phone}</a>
-            <a href="https://github.com/arsenefogue971aa9258" target="_blank" rel="noopener noreferrer" className="hover:text-fg transition-colors text-xs">GitHub</a>
-            <a href="https://linkedin.com/in/arsenefogue971aa9258" target="_blank" rel="noopener noreferrer" className="hover:text-fg transition-colors text-xs">LinkedIn</a>
+            <a href="https://github.com/Hyogan" target="_blank" rel="noopener noreferrer" className="hover:text-fg transition-colors text-xs">GitHub</a>
+            <a href="https://linkedin.com/in/arsene-fogue" target="_blank" rel="noopener noreferrer" className="hover:text-fg transition-colors text-xs">LinkedIn</a>
           </div>
         </div>
       </footer>

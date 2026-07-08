@@ -32,9 +32,9 @@ export const faq: FAQItem[] = [
       es: '¿En qué plazo puedes empezar?',
     },
     answer: {
-      fr: 'Je suis disponible dès maintenant pour des discussions. Le démarrage effectif dépend du scope du projet — pour une mission urgente, je peux m\'organiser en moins d\'une semaine.',
-      en: 'I\'m available now for discussions. The actual start date depends on the project scope — for urgent work, I can be ready in under a week.',
-      es: 'Estoy disponible ahora para conversaciones. El inicio efectivo depende del alcance del proyecto — para misiones urgentes, puedo organizarme en menos de una semana.',
+      fr: 'Je suis disponible dès maintenant pour des discussions. Le démarrage effectif dépend du scope du projet.  Pour une mission urgente, je peux m\'organiser en moins d\'une semaine.',
+      en: 'I\'m available now for discussions. The actual start date depends on the project scope. For urgent work, I can be ready in under a week.',
+      es: 'Estoy disponible ahora para conversaciones. El inicio efectivo depende del alcance del proyecto. Para misiones urgentes, puedo organizarme en menos de una semana.',
     },
   },
   {
@@ -49,16 +49,16 @@ export const faq: FAQItem[] = [
       es: 'Sí. Además del desarrollo, gestiono ciclos de producto completos: análisis de necesidades, priorización de funcionalidades, coordinación de equipos y puesta en producción. Esta doble competencia es especialmente útil para equipos pequeños o proyectos en etapa inicial.',
     },
   },
-  {
-    question: {
-      fr: 'Quelle stack tu recommandes pour un nouveau projet en 2026 ?',
-      en: 'What stack do you recommend for a new project in 2026?',
-      es: '¿Qué stack recomiendas para un nuevo proyecto en 2026?',
-    },
-    answer: {
-      fr: 'Ça dépend du projet. Pour une app web rapide à lancer : Next.js + Laravel ou Spring Boot + PostgreSQL. Pour du mobile : React Native. Pour un back-office interne : Angular + Spring Boot. Je suis pragmatique — je choisis la stack la plus adaptée au contexte, pas forcément la plus tendance.',
-      en: 'It depends on the project. For a web app to launch fast: Next.js + Laravel or Spring Boot + PostgreSQL. For mobile: React Native. For an internal back-office: Angular + Spring Boot. I\'m pragmatic — I choose the stack that fits the context, not necessarily the trendiest one.',
-      es: 'Depende del proyecto. Para una app web rápida de lanzar: Next.js + Laravel o Spring Boot + PostgreSQL. Para móvil: React Native. Para un back-office interno: Angular + Spring Boot. Soy pragmático — elijo la stack más adecuada al contexto, no necesariamente la más de moda.',
-    },
-  },
+  // {
+  //   question: {
+  //     fr: 'Quelle stack tu recommandes pour un nouveau projet en 2026 ?',
+  //     en: 'What stack do you recommend for a new project in 2026?',
+  //     es: '¿Qué stack recomiendas para un nuevo proyecto en 2026?',
+  //   },
+  //   answer: {
+  //     fr: 'Ça dépend du projet. Pour une app web rapide à lancer : Next.js + Laravel ou Spring Boot + PostgreSQL. Pour du mobile : React Native. Pour un back-office interne : Angular + Spring Boot. Je suis pragmatique, je choisis la stack la plus adaptée au contexte, pas forcément la plus tendance.',
+  //     en: 'It depends on the project. For a web app to launch fast: Next.js + Laravel or Spring Boot + PostgreSQL. For mobile: React Native. For an internal back-office: Angular + Spring Boot. I\'m pragmatic,  I choose the stack that fits the context, not necessarily the trendiest one.',
+  //     es: 'Depende del proyecto. Para una app web rápida de lanzar: Next.js + Laravel o Spring Boot + PostgreSQL. Para móvil: React Native. Para un back-office interno: Angular + Spring Boot. Soy pragmático, elijo la stack más adecuada al contexto, no necesariamente la más de moda.',
+  //   },
+  // },
 ]

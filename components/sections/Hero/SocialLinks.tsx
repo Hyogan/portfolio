@@ -1,8 +1,8 @@
 import { Icon } from '@iconify/react'
 
 const links = [
-  { href: 'https://github.com/arsenefogue971aa9258',   label: 'GitHub',     icon: 'simple-icons:github'   },
-  { href: 'https://linkedin.com/in/arsenefogue971aa9258', label: 'LinkedIn', icon: 'simple-icons:linkedin' },
+  { href: 'https://github.com/Hyogan',   label: 'GitHub',     icon: 'simple-icons:github'   },
+  { href: 'https://linkedin.com/in/arsene-fogue', label: 'LinkedIn', icon: 'simple-icons:linkedin' },
   { href: 'https://twitter.com/NelsonTiagho',          label: 'X / Twitter', icon: 'simple-icons:x'        },
   { href: 'mailto:tiaghojeux@gmail.com',               label: 'Email',      icon: 'simple-icons:gmail'    },
 ]

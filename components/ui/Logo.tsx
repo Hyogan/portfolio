@@ -4,7 +4,7 @@ import Image from 'next/image'
 import { useTheme } from '@/components/providers/ThemeProvider'
 
 interface LogoProps {
-  /** Pixel size — applied to both width and height (square logos) */
+  /** Pixel size applied to both width and height (square logos) */
   size?: number
   /** Use the no-background version (transparent, works on any colored surface) */
   noBg?: boolean

@@ -19,7 +19,7 @@ export default function ExperienceItem({ item, index, lang, currentLabel }: Expe
   const isRight = index % 2 === 0
   const initials = item.company.split(/\s+/).map((w) => w[0]).slice(0, 2).join('').toUpperCase()
 
-  const dateRange = `${formatDate(item.startDate)} — ${item.endDate ? formatDate(item.endDate) : 'Présent'}`
+  const dateRange = `${formatDate(item.startDate)} - ${item.endDate ? formatDate(item.endDate) : 'Présent'}`
 
   return (
     <div className="relative grid md:grid-cols-2 gap-6 md:gap-16 mb-16 sm:mb-20">
@@ -30,7 +30,7 @@ export default function ExperienceItem({ item, index, lang, currentLabel }: Expe
       {/* Content */}
       <div className={isRight ? 'md:pr-14' : 'md:pl-14 md:order-2'}>
         <h3 className="font-bold text-lg sm:text-xl mb-1">{item.role}</h3>
-        <p className="text-sm text-orange/80 mb-4">{item.company} — {item.location}</p>
+        <p className="text-sm text-orange/80 mb-4">{item.company} - {item.location}</p>
         <ul className="space-y-2.5 mb-5">
           {item.bullets[lang].map((bullet, i) => (
             <li key={i} className="flex gap-2.5 text-sm text-fg/55 leading-relaxed">

@@ -19,7 +19,7 @@ export const education: EducationItem[] = [
       en: 'Higher Technician\'s Diploma',
       es: 'Diploma de Técnico Superior',
     },
-    school: 'IAI — Institut Africain d\'Informatique',
+    school: 'IAI :  Institut Africain d\'Informatique',
     location: 'Bafoussam',
     startDate: '2021-11',
     endDate: '2022-10',
@@ -27,9 +27,9 @@ export const education: EducationItem[] = [
   },
   {
     degree: {
-      fr: 'Baccalauréat ESG — Série C',
-      en: 'High School Diploma — Science Series',
-      es: 'Bachillerato — Serie C (Ciencias)',
+      fr: 'Baccalauréat ESG - Série C',
+      en: 'High School Diploma -Science Series',
+      es: 'Bachillerato - Serie C (Ciencias)',
     },
     school: 'Lycée Bilingue de Galim',
     location: 'Galim',

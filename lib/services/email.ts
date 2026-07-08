@@ -50,5 +50,5 @@ export async function sendContactEmail(formData: FormData): Promise<ContactFormS
     return { success: false, message: 'Email sending failed. Please try again.' }
   }
 
-  return { success: true, message: '✓ Message received — Arsène will reply soon!' }
+  return { success: true, message: '✓ Message received,  Arsène will reply soon!' }
 }

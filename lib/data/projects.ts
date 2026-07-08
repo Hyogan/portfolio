@@ -4,7 +4,7 @@ export const projects: Project[] = [
   {
     slug: 'finovo',
     title: 'Finovo',
-    subtitle: 'Budget partagé entre colocataires — app mobile React Native + dashboard web React',
+    subtitle: 'Budget partagé entre colocataires :  app mobile React Native + dashboard web React',
     year: 'T2 2025',
     tags: ['Application mobile', 'Web dashboard'],
     stack: ['React Native', 'React', 'Laravel', 'MySQL'],
@@ -30,7 +30,7 @@ export const projects: Project[] = [
           'Offline-first mobile : l\'app doit rester utilisable sans connexion et synchroniser les dépenses en attente dès que le réseau revient. Géré avec AsyncStorage + une queue de sync.',
         ],
         results: [
-          '3 200 utilisateurs actifs en 3 mois après le lancement, sans budget marketing — uniquement du bouche-à-oreille.',
+          '3 200 utilisateurs actifs en 3 mois après le lancement, sans budget marketing, uniquement du bouche-à-oreille.',
           'Note de 4,6/5 sur les stores avec des retours positifs sur la simplicité de l\'interface.',
           'Temps de chargement du dashboard réduit de 40 % après optimisation des requêtes SQL N+1 et mise en cache Redis.',
           'Livré en 6 semaines, seul, du premier commit au déploiement en production sur un serveur Nginx.',
@@ -49,7 +49,7 @@ export const projects: Project[] = [
           'Offline-first mobile: the app must remain usable without a connection and sync pending expenses when the network returns. Handled with AsyncStorage + a sync queue.',
         ],
         results: [
-          '3,200 active users within 3 months of launch, with zero marketing budget — pure word of mouth.',
+          '3,200 active users within 3 months of launch, with zero marketing budget, pure word of mouth.',
           'Rated 4.6/5 on app stores, praised for interface simplicity and calculation reliability.',
           'Dashboard load time reduced by 40% after fixing N+1 SQL queries and adding Redis caching.',
           'Delivered in 6 weeks, solo, from first commit to production deployment on Nginx.',
@@ -79,7 +79,7 @@ export const projects: Project[] = [
   {
     slug: 'atelier-brut',
     title: 'Atelier Brut',
-    subtitle: 'Commandes sur-mesure + back-office — Angular, SASS, Spring Boot, PostgreSQL',
+    subtitle: 'Commandes sur-mesure + back-office,Angular, SASS, Spring Boot, PostgreSQL',
     year: 'T4 2024',
     tags: ['Plateforme web'],
     stack: ['Angular', 'SASS', 'Spring Boot', 'PostgreSQL'],
@@ -114,7 +114,7 @@ export const projects: Project[] = [
   {
     slug: 'pulse-crm',
     title: 'Pulse CRM',
-    subtitle: 'Modernisation d\'un CRM interne — JavaScript, PHP, MySQL',
+    subtitle: 'Modernisation d\'un CRM interne, JavaScript, PHP, MySQL',
     year: 'T3 2024',
     tags: ['App web'],
     stack: ['JavaScript', 'PHP', 'MySQL'],
@@ -149,7 +149,7 @@ export const projects: Project[] = [
   {
     slug: 'cloud-architects-crm',
     title: 'Cloud Architects CRM',
-    subtitle: 'Développement et administration Salesforce — Cloud Architects, Yaoundé',
+    subtitle: 'Développement et administration Salesforce, Cloud Architects, Yaoundé',
     year: 'Stage 2023',
     tags: ['CRM Salesforce'],
     stack: ['Salesforce'],

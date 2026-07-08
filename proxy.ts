@@ -1,12 +1,12 @@
 /*
-  proxy.ts — renamed from middleware.ts in Next.js 16 (breaking change).
+  proxy.ts : renamed from middleware.ts in Next.js 16 (breaking change).
   Runs on the Edge before every request that matches `config.matcher`.
 
   Responsibilities:
   1. Detect the user's preferred locale from the Accept-Language header
   2. Redirect paths without a locale prefix (e.g. / → /fr/)
   3. Set a NEXT_LOCALE cookie so app/layout.tsx can read it for <html lang="">
-     (root layout cannot access URL params directly — cookie bridges the gap)
+     (root layout cannot access URL params directly - cookie bridges the gap)
 */
 
 import { type NextRequest, NextResponse } from 'next/server'
@@ -46,7 +46,7 @@ export function proxy(request: NextRequest) {
   )
 
   if (pathnameHasLocale) {
-    // Locale already in path — just refresh the cookie so root layout stays synced
+    // Locale already in path,  just refresh the cookie so root layout stays synced
     const currentLocale =
       locales.find((l) => pathname.startsWith(`/${l}/`) || pathname === `/${l}`) ?? defaultLocale
     const response = NextResponse.next()
@@ -54,7 +54,7 @@ export function proxy(request: NextRequest) {
     return response
   }
 
-  // No locale in path — detect from browser and redirect
+  // No locale in path - detect from browser and redirect
   const locale = getLocale(request)
   const redirectUrl = new URL(`/${locale}${pathname}`, request.url)
 

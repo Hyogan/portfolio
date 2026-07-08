@@ -10,7 +10,7 @@ import './globals.css'
   WHY read the locale from a cookie here instead of URL params?
   ──────────────────────────────────────────────────────────────
   Next.js requires the root layout (app/layout.tsx) to render <html> and <body>.
-  But root layouts have no access to dynamic segment params — those only exist in
+  But root layouts have no access to dynamic segment params - those only exist in
   nested layouts. The proxy.ts sets a NEXT_LOCALE cookie on every request,
   which this root layout can read to get the correct lang attribute.
 */

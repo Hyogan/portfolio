@@ -13,9 +13,9 @@ export const testimonials: Testimonial[] = [
   },
   {
     quote: {
-      fr: 'Livraisons ponctuelles, communication claire à chaque étape. On savait toujours où en étaient les choses — c\'est précieux.',
-      en: 'On-time delivery, clear communication at every step. We always knew where things stood — that\'s invaluable.',
-      es: 'Entregas puntuales, comunicación clara en cada etapa. Siempre supimos cómo estaban las cosas — eso es muy valioso.',
+      fr: 'Livraisons ponctuelles, communication claire à chaque étape. On savait toujours où en étaient les choses, c\'est précieux.',
+      en: 'On-time delivery, clear communication at every step. We always knew where things stood, that\'s invaluable.',
+      es: 'Entregas puntuales, comunicación clara en cada etapa. Siempre supimos cómo estaban las cosas, eso es muy valioso.',
     },
     name: 'Kévin M.',
     role: 'CTO, Startup SaaS',

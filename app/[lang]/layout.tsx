@@ -3,7 +3,7 @@ import type { Metadata } from 'next'
 import { getDictionary, hasLocale } from '@/lib/i18n/dictionaries'
 
 /*
-  This is the locale-aware nested layout — it wraps every page under /fr/, /en/, /es/.
+  This is the locale-aware nested layout - it wraps every page under /fr/, /en/, /es/.
   It does NOT render <html> or <body> (that's the root layout's job).
 
   Current responsibilities:

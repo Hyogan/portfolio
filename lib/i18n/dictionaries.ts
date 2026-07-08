@@ -1,5 +1,5 @@
 /*
-  'server-only' is a sentinel package — importing it causes a build error
+  'server-only' is a sentinel package, importing it causes a build error
   if this module is ever imported from a Client Component ('use client').
   This protects our translation files from ending up in the client bundle,
   which matters because:
@@ -20,7 +20,7 @@ export type Locale = keyof typeof dictionaries
 export const locales = Object.keys(dictionaries) as Locale[]
 export const defaultLocale: Locale = 'fr'
 
-/** Type-safe locale check — narrows `string` to `Locale` */
+/** Type-safe locale check narrows `string` to `Locale` */
 export function hasLocale(locale: string): locale is Locale {
   return locale in dictionaries
 }

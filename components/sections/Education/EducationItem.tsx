@@ -20,11 +20,11 @@ export default function EducationItem({ item, lang, obtainedLabel, isLast }: Edu
     <div className={`grid sm:grid-cols-[1fr_auto] gap-3 sm:gap-10 items-start ${isLast ? '' : 'border-b border-fg/10 pb-8'}`}>
       <div>
         <h3 className="font-bold text-lg mb-1">{item.degree[lang]}</h3>
-        <p className="text-sm text-orange/80 mb-1">{item.school} — {item.location}</p>
+        <p className="text-sm text-orange/80 mb-1">{item.school} - {item.location}</p>
       </div>
       <div className="text-right shrink-0">
         <p className="font-semibold text-sm">
-          {formatYear(item.startDate)} — {formatYear(item.endDate)}
+          {formatYear(item.startDate)} - {formatYear(item.endDate)}
         </p>
         {item.obtained && (
           <p className="text-xs text-fg/35 mt-0.5">{obtainedLabel}</p>
